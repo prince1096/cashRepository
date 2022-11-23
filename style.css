@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50vw;
+  background-color: lightblue;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.description {
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+div label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+
+#bill-amount,
+#cash-given {
+  padding: 10px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+#button {
+  margin: 20px auto;
+  height: 40px;
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  margin: 5px;
+}
+
+caption {
+  margin: 10px;
+  font-weight: bold;
+}
