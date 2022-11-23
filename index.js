@@ -29,11 +29,11 @@ function calculateChange(returnedAmount) {
 function validateBillAmount() {
   hideMessage();
   if (billAmount.value > 0) {
-    if (cashGiven.value >= billAmount.value) {
+    if (billAmount.value > cashGiven.value) {
+      showMessage("You have to wash plates to getout of here");
+    } else {
       const returnedAmount = cashGiven.value - billAmount.value;
       calculateChange(returnedAmount);
-    } else {
-      showMessage("You have to wash plates to getout of here");
     }
   } else {
     showMessage("The Bill amount should be greater than 0");
