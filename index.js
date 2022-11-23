@@ -6,6 +6,8 @@ const noOfNotes = document.querySelectorAll(".no-notes");
 
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 
+checkButton.addEventListener("click", validateBillAmount);
+
 function showMessage(msg) {
   message.style.display = "block";
   message.innerText = msg;
@@ -37,5 +39,3 @@ function validateBillAmount() {
     showMessage("The Bill amount should be greater than 0");
   }
 }
-
-checkButton.addEventListener("click", validateBillAmount);
