@@ -29,12 +29,20 @@ function calculateChange(returnedAmount) {
 function validateBillAmount() {
   hideMessage();
   if (billAmount.value > 0) {
-    if (billAmount.value > cashGiven.value) {
-      showMessage("You have to wash plates to getout of here");
-    } else {
-      const returnedAmount = cashGiven.value - billAmount.value;
+    // if (billAmount.value > cashGiven.value) {
+    // showMessage("You have to wash plates to getout of here");
+    // } else {
+    const returnedAmount = cashGiven.value - billAmount.value;
+    console.log(returnedAmount);
+    console.log(typeof returnedAmount);
+
+    if (returnedAmount >= 0) {
       calculateChange(returnedAmount);
+    } else {
+      showMessage("You have to wash plates to getout of here");
     }
+    // calculateChange(returnedAmount);
+    // }
   } else {
     showMessage("The Bill amount should be greater than 0");
   }
