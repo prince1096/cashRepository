@@ -32,6 +32,8 @@ function validateBillAmount() {
     // if (billAmount.value > cashGiven.value) {
     // showMessage("You have to wash plates to getout of here");
     // } else {
+    console.log(typeof billAmount.value);
+    console.log(typeof cashGiven.value);
     const returnedAmount = cashGiven.value - billAmount.value;
     console.log(returnedAmount);
     console.log(typeof returnedAmount);
